@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://andikatri2710.github.io/sitemap.xml
+Sitemap: https://andikatri2710.github.io/AndikaTriH/sitemap.xml
