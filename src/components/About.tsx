@@ -1,4 +1,3 @@
-import { Download } from 'lucide-react'
 import { profile } from '../data/profile'
 import { useLanguage } from '../i18n/LanguageContext'
 import { Reveal } from './Reveal'
@@ -27,18 +26,6 @@ export function About() {
               <p className="leading-relaxed text-muted">{t(paragraph)}</p>
             </Reveal>
           ))}
-
-          <Reveal delay={220}>
-            <a
-              href={profile.resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl border border-line bg-surface px-5 py-3 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:border-primary hover:text-primary"
-            >
-              <Download aria-hidden="true" className="h-4 w-4" />
-              {s.aboutCv}
-            </a>
-          </Reveal>
         </div>
 
         <Reveal delay={120}>

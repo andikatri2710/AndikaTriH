@@ -1,4 +1,4 @@
-import { ArrowRight, Download, MapPin } from 'lucide-react'
+import { ArrowRight, MapPin } from 'lucide-react'
 import { profile } from '../data/profile'
 import { socials } from '../data/socials'
 import { useLanguage } from '../i18n/LanguageContext'
@@ -89,15 +89,6 @@ export function Hero() {
               >
                 {s.ctaContact}
               </a>
-              <a
-                href={profile.resumeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold text-muted transition-colors hover:text-primary"
-              >
-                <Download aria-hidden="true" className="h-4 w-4" />
-                {s.downloadCv}
-              </a>
             </div>
           </Reveal>
 
@@ -121,16 +112,16 @@ export function Hero() {
           </Reveal>
         </div>
 
-        {/* Visual: circular monogram card */}
+        {/* Visual: monogram card */}
         <Reveal delay={260} className="mx-auto w-full max-w-[26rem] xl:mx-0">
-          <div className="relative aspect-square w-full overflow-hidden rounded-[2rem] bg-gradient-to-br from-[var(--g-from)] via-[var(--g-via)] to-[var(--g-to)] p-[3px] shadow-2xl shadow-primary/20">
-            <div className="relative h-full w-full rounded-[calc(2rem-3px)] bg-surface">
-              <div className="flex h-full items-center justify-center">
+          <div className="relative aspect-square w-full rounded-[2rem] bg-gradient-to-br from-[var(--g-from)] via-[var(--g-via)] to-[var(--g-to)] p-[3px] shadow-2xl shadow-primary/20">
+            <div className="relative flex h-full w-full flex-col rounded-[calc(2rem-3px)] bg-surface">
+              <div className="flex flex-1 items-center justify-center">
                 <span className="text-7xl font-extrabold tracking-tight text-gradient sm:text-8xl">
                   {profile.initials}
                 </span>
               </div>
-              <div className="border-t border-line/70 px-4 pb-4">
+              <div className="border-t border-line/70 px-5 py-4">
                 <p className="text-xs font-semibold tracking-[0.25em] text-muted uppercase">
                   {profile.role}
                 </p>

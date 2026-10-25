@@ -15,7 +15,6 @@ export const profile = {
     id: 'Tersedia untuk proyek freelance',
     en: 'Available for freelance work',
   } satisfies L10n,
-  resumeUrl: 'cv/andika-tri-handoyo-cv.pdf',
   about: [
     {
       id: 'Saya memulai karier sebagai programmer di Rumah Sakit Metropolitan Medical Centre, mengembangkan sistem web dengan PHP native, JavaScript, dan jQuery. Dari sana saya berkembang ke stack modern: Laravel dan Vue.js.',

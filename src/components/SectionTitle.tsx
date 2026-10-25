@@ -13,10 +13,12 @@ export function SectionTitle({
   eyebrow,
   title,
   description,
-  align = 'center',
+  align = 'left',
 }: SectionTitleProps) {
+  const centered = align === 'center'
+
   return (
-    <header className={cn('mb-12 md:mb-16', align === 'left' && 'text-left')}>
+    <header className={cn('mb-12 md:mb-16', centered && 'text-center')}>
       <p
         id={`${id}-eyebrow`}
         className="mb-3 inline-flex items-center gap-2 text-xs font-bold tracking-[0.25em] text-primary uppercase"
@@ -34,7 +36,7 @@ export function SectionTitle({
         <p
           className={cn(
             'mt-4 max-w-2xl text-base leading-relaxed text-muted',
-            align === 'left' && 'text-left',
+            centered && 'mx-auto',
           )}
         >
           {description}

@@ -41,13 +41,11 @@ const id = {
   // Hero
   greeting: 'Halo, saya',
   viewWork: 'Lihat Proyek',
-  downloadCv: 'Unduh CV',
   socialsAria: 'Tautan sosial',
 
   // About
   aboutEyebrow: 'Tentang',
   aboutTitle: 'Tentang Saya',
-  aboutCv: 'Unduh CV (PDF)',
 
   // Skills
   skillsEyebrow: 'Keahlian',
@@ -149,14 +147,12 @@ const en: UiStrings = {
   greeting: "Hi, I'm",
   viewWork: 'View My Work',
   demoLabel: 'Live Demo',
-  downloadCv: 'Download CV',
   demoSuffix: '(opens in a new tab)',
   socialsAria: 'Social links',
 
   // About
   aboutEyebrow: 'About',
   aboutTitle: 'About Me',
-  aboutCv: 'Download CV (PDF)',
 
   // Skills
   skillsEyebrow: 'Skills',
